@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "api/player-info.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/region",
+      "methods": ["GET"],
+      "dest": "api/player-info.py"
+    }
+  ]
+}
